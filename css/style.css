@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700;900&family=Poppins:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700;900&family=Playfair+Display:ital,wght@1,700&family=Poppins:wght@400;500;600;700;900&display=swap');
 /*=======[ Common Style ]========*/
 *{
     margin:0;
@@ -1735,7 +1735,7 @@ footer .footer-bottom .footer-bottom-inner .footer-menu li a i{
     color:#ffffff;
     font-size: 20px;
 }
-/*=======[get products section Style ]========*/
+/*=======[Category section Style ]========*/
 #category{
     padding:100px 0;
     position:relative;
@@ -1818,6 +1818,391 @@ footer .footer-bottom .footer-bottom-inner .footer-menu li a i{
     opacity: 1;
     transition: 1s;
 }
+
+/*=======[Real artist section Style ]========*/
+#various-artist{
+    background: url(../images/various-artist-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:100px 0;
+    text-align: center;
+}
+#various-artist h2{
+    font-family: 'Inter', sans-serif;
+    color:#ffffff;
+    margin-bottom: 20px;
+}
+#various-artist .various-artist-top-para{
+    color:#ffffff;
+    font-family: 'Inter', sans-serif;
+    width:700px;
+    margin:0 auto;
+}
+#various-artist .various-artist-contents .various-artist-nav{
+    min-height:35px;
+    margin: 30px 0;
+}
+#various-artist .various-artist-contents .various-artist-nav ul{
+    padding-left: 0;
+    width:415px;
+    margin: 0 auto;
+}
+#various-artist .various-artist-contents .various-artist-nav ul li{
+    list-style-type: none;
+    float:left;
+    margin-right: 15px;
+    color:#ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+#various-artist .various-artist-contents .various-artist-nav ul li.active{
+    border-bottom: 1px solid #ffffff;
+}
+#various-artist .various-artist-contents .various-artist-isotope .various-iso-item{
+    position:relative;
+    text-align: left;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    width:23.5%;
+}
+#various-artist .various-artist-contents .various-artist-isotope .various-iso-item.margin{
+    margin-right: 0;
+}
+#various-artist .various-artist-contents .various-artist-isotope .various-iso-item img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+#various-artist .various-artist-contents .various-artist-isotope .various-iso-item .various-item-details-container{
+    position:absolute;
+    top:-10px;
+    left:0;
+    width:100%;
+    padding:30px 0;
+    padding-right: 20px;
+}
+.various-artist-isotope .various-iso-item .various-item-details-container .various-item-details .various-details-top{
+    display:flex;
+    justify-content: space-between;
+}
+.various-artist-isotope .various-iso-item .various-item-details-container .various-item-details .various-details-top .tag-text{
+    background: #ffffff;
+    padding:8px 20px;
+    color:#A83E4B;
+}
+.various-artist-isotope .various-iso-item .various-item-details-container .various-item-details .various-details-top .video-play a{
+    background: #ffffff;
+    padding:12px 15px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.various-artist-isotope .various-iso-item .various-item-details-container .various-item-details .various-details-top .video-play a i{
+    color:#FF0000;
+    font-size: 20px;
+}
+.various-artist-isotope .various-iso-item .various-item-details-container .various-item-details h4{
+    margin-top:50px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.various-artist-isotope .various-iso-item .various-item-details-container .various-item-details p{
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    line-height:20px;
+    padding-left: 20px;
+}
+.various-artist-isotope .various-iso-item .various-item-details-container .various-item-details .price{
+    position: absolute;
+    right:20px;
+    bottom:17px;
+    padding:12px 8px;
+    background:#FF0000;
+    border-radius: 50%;
+}
+.various-artist-isotope .various-iso-item .various-item-details-container .various-item-details .price span{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color:#ffffff;
+}
+#various-artist #pagination-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#various-artist #pagination-div .pagination .page-link {
+    color: #ffffff;
+    background: #DFE2E221;
+    border: none;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    font-family: 'Inter', sans-serif;
+}
+#various-artist #pagination-div .pagination .page-item.active .page-link{
+    background: #A83E4B;
+    color:#ffffff;
+}
+
+/*=======[Real artist section Style ]========*/
+#real-artist{
+    padding:100px 0;
+    text-align: center;
+}
+#real-artist h2{
+    color:#4B474B;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+}
+#real-artist p{
+    color:#4B474B;
+    font-family: 'Inter', sans-serif;
+}
+#real-artist .real-artist-cards{
+    margin-top: 50px;
+}
+#real-artist .real-artist-cards .single-card{
+    position:relative;
+}
+#real-artist .real-artist-cards .single-card .real-artist-bg-img img{
+    width:100%;
+    height:100%;
+}
+#real-artist .real-artist-cards .single-card .card-content{
+    position:absolute;
+    bottom:10px;
+    left:0;
+    background:#ffffff;
+    width:100%;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 10px 0px #4B474B73;
+    transition: 0.5s all ease-in-out;
+}
+#real-artist .real-artist-cards .single-card:hover .card-content{
+    background: #A83E4B;
+}
+#real-artist .real-artist-cards .single-card .card-content .real-artist-img{
+    background: #ffffff;
+    width:98px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
+#real-artist .real-artist-cards .single-card .card-content .real-artist-img img{
+    box-shadow: 0px 6px 7px 0px #00000073;
+    border-radius: 50%;
+}
+#real-artist .real-artist-cards .single-card .card-content h4{
+    color:#4B474B;
+    font-size:20px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+    transition:0.5s all ease-in-out;
+}
+#real-artist .real-artist-cards .single-card .card-content .artist-social-links ul{
+    padding-left: 0;
+    width:180px;
+    margin:0 auto;
+}
+#real-artist .real-artist-cards .single-card .card-content .artist-social-links ul li{
+    list-style-type: none;
+    float:left;
+    margin-right: 10px;
+}
+#real-artist .real-artist-cards .single-card .card-content .artist-social-links ul li:last-child{
+    margin-right: 0;
+}
+#real-artist .real-artist-cards .single-card .card-content .artist-social-links ul li a{
+    border: 1px solid #A83E4B;
+    padding:5px 9px;
+    border-radius: 50%;
+    transition:0.5s all ease-in-out;
+}
+#real-artist .real-artist-cards .single-card .card-content .artist-social-links ul li a.facebook{
+    padding:5px 10px;
+}
+#real-artist .real-artist-cards .single-card .card-content .artist-social-links ul li a i{
+    color:#A83E4B;
+    font-size: 18px;
+    transition:0.5s all ease-in-out;
+}
+#real-artist .real-artist-cards .single-card:hover .card-content h4{
+    color:#ffffff;
+}
+#real-artist .real-artist-cards .single-card:hover .card-content  .artist-social-links a{
+    border:1px solid #ffffff;
+}
+#real-artist .real-artist-cards .single-card:hover .card-content  .artist-social-links i{
+    color:#ffffff;
+}
+/*=======[Exclusive audiolibrary section Style ]========*/
+#exclusive-audiolibrary{
+    background: url(../images/exclusive-audio-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding:100px 0;
+    text-align: center;
+}
+#exclusive-audiolibrary h2{
+    color:#ffffff;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+}
+#exclusive-audiolibrary p{
+    color:#ffffff;
+    font-family: 'Inter', sans-serif;
+}
+#exclusive-audiolibrary .exclusive-audiolibrary-contents{
+    margin-top: 50px;
+}
+#exclusive-audiolibrary .exclusive-audiolibrary-contents .video-play-container{
+    position: relative;
+    margin-bottom: 20px;
+}
+#exclusive-audiolibrary .exclusive-audiolibrary-contents .video-play-container img{
+    border-radius: 10px;
+}
+#exclusive-audiolibrary .exclusive-audiolibrary-contents .video-play-container .video-play{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#exclusive-audiolibrary .exclusive-audiolibrary-contents .video-play-container .video-play a{
+    background: #FFFFFFC2;
+    padding:15px 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#exclusive-audiolibrary .exclusive-audiolibrary-contents .video-play-container .video-play a i{
+    font-size: 20px;
+    color:#FF0000;
+}
+#exclusive-audiolibrary .more-product-btn{
+    background: linear-gradient(98.49deg, #000000 -6.03%, #A83E4B 83.4%);
+    border:1px solid #A83E4B;
+}
+#exclusive-audiolibrary .more-product-btn:hover{
+    background: transparent;
+    color: #A83E4B;
+}
+
+/*=======[Desire plan section Style ]========*/
+#desire-plan{
+    padding:100px 0;
+    text-align: center;
+}
+#desire-plan h2{
+    font-family: 'Inter', sans-serif;
+    color:#4B474B;
+    margin-bottom: 20px;
+}
+#desire-plan p{
+    color:#4B474B;
+    font-family: 'Inter', sans-serif;
+}
+#desire-plan .desire-plan-cards{
+    margin-top: 50px;
+}
+#desire-plan .desire-plan-cards .single-card{
+    background: #A83E4B26;
+    padding:40px 20px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    width:90%;
+    margin:0 auto;
+    transition: 0.5s all ease-in-out;
+}
+#desire-plan .desire-plan-cards .single-card:hover{
+    background: #A83E4B;
+    box-shadow: 0px 0px 43px 0px #4B474B73;
+}
+#desire-plan .desire-plan-cards .single-card .card-top{
+    padding-bottom: 20px;
+    position:relative;
+}
+#desire-plan .desire-plan-cards .single-card .card-top::after{
+    position: absolute;
+    bottom:0;
+    left:0;
+    content: "";
+    background: url(../images/plan-card-border-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:10px;
+    transition: 0.5s all ease-in-out;
+}
+#desire-plan .desire-plan-cards .single-card .card-top h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: #4B474B;
+    margin-bottom: 10px;
+    transition: 0.5s all ease-in-out;
+}
+#desire-plan .desire-plan-cards .single-card .card-top p{
+    color:#4B474B;
+    width:250px;
+    margin:0 auto;
+    transition: 0.5s all ease-in-out;
+}
+#desire-plan .desire-plan-cards .single-card:hover .card-top h4, #desire-plan .desire-plan-cards .single-card:hover .card-top p{
+    color: #ffffff;
+}
+#desire-plan .desire-plan-cards .single-card:hover .card-top::after{
+    background: url(../images/plan-card-hover-border-img.png) ;
+}
+#desire-plan .desire-plan-cards .single-card .card-bottom{
+    padding-top: 50px;
+}
+#desire-plan .desire-plan-cards .single-card .card-bottom span{
+    font-size: 35px;
+    color:#FF6001;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: 0.5s all ease-in-out;
+}
+#desire-plan .desire-plan-cards .single-card .card-bottom p{
+    color:#4B474B;
+    font-size: 17px;
+    transition: 0.5s all ease-in-out;
+}
+#desire-plan .desire-plan-cards .single-card:hover .card-bottom span, #desire-plan .desire-plan-cards .single-card:hover .card-bottom p{
+    color:#ffffff;
+}
+#desire-plan .desire-plan-cards .single-card .card-bottom .plan-card-btn-container{
+    margin-top: 20px;
+}
+#desire-plan .desire-plan-cards .single-card .card-bottom .plan-card-btn-container .plan-card-btn{
+    font-size: 16px;
+    font-weight: 600;
+    color:#4B474B;
+    border: 1px solid #A83E4B;
+    border-radius:50px;
+    padding:15px 42px;
+    background: transparent;
+    transition: 0.5s all ease-in-out;
+}
+#desire-plan .desire-plan-cards .single-card:hover .plan-card-btn-container .plan-card-btn{
+    color:#A83E4B;
+    background: #ffffff;
+    border:1px solid #ffffff;
+}
+
 /*=======[get products section Style ]========*/
 .homepage-03 #get-products{
     background: url(../images/get-products-bg-03.png);
@@ -1879,4 +2264,75 @@ footer .footer-bottom .footer-bottom-inner .footer-menu li a i{
     font-weight: 600;
     margin-bottom: 20px;
     letter-spacing: 1px;
+}
+
+/*=============================[ Homepage 03 Style ]===============================*/
+
+#header-04{
+    background: url(../images/header-bg-04.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+}
+.homepage-04 #menubar #other-options .login-btn{
+    background-color: #ffffff;
+    border:1px solid #ffffff;
+    color: #4CC43A;
+}
+.homepage-04 #menubar #other-options .login-btn:hover{
+    background: #4CC43A;
+    border:1px solid #ffffff;
+    color:#ffffff;
+}
+.homepage-04 .header-search .header-search-form input[type="search"] {
+    border-bottom: 1px solid #4CC43A; 
+}
+.homepage-04 .header-search .header-search-form .search-btn {
+    background: #4CC43A;
+}
+.homepage-04 .header-search .header-search-form .search-btn:hover {
+    background: #ffffff;
+    color: #4CC43A;
+    border:1px solid #4CC43A;
+}
+
+/*=======[Intro-04 Style ]========*/
+#intro-04{
+    padding:150px 0 600px 0;
+}
+#intro-04 h1{
+    font-size: 65px;
+    font-family: 'Playfair Display', serif;
+    width:760px;
+    margin:0 auto;
+    text-align: center;
+    color:#ffffff;
+}
+#intro-04 .form-div{
+    width:700px;
+    margin: 0 auto;
+    background:#ffffff;
+    margin-top: 50px;
+    padding:15px 30px;
+    border-radius: 50px;
+}
+#intro-04 .form-div input{
+    width:95%;
+    background: transparent;
+    border:none;
+    outline:none;
+}
+#intro-04 .form-div input::placeholder{
+    color:#4B474BF0;
+    font-size: 16px;
+}
+#intro-04 .form-div button{
+    background: transparent;
+    border:none;
+    outline:none;
+}
+#intro-04 .form-div button i{
+    font-size: 24px;
+    color:#2B2A2B;
 }

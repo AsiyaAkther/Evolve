@@ -178,5 +178,22 @@ $(document).ready(function(){
         arrows:true
     });
 
+    // Various artist js code for homepage-03
+
+    $('.various-artist-isotope').isotope({
+        itemSelector: '.various-iso-item',
+        layoutMode:'fitRows'
+      });
+      $('.various-artist-nav ul li').click(function(){
+        $('.various-artist-nav ul li').removeClass('active');
+        $(this).addClass('active');
+      
+        var selector = $(this).attr('data-filter');
+        $('.various-artist-isotope').isotope({
+            filter:selector
+        });
+        return false;
+      });
+
 
 });
