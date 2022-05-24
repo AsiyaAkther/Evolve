@@ -47,6 +47,9 @@ h2{
     padding-top: 16px;
     min-height:70px;
 }
+#menubar .menu .menu-item{
+    position:relative;
+}
 #menubar .navbar-light .menu .nav-link {
     color: #ffffff;
     font-size: 16px;
@@ -55,6 +58,56 @@ h2{
     text-transform:capitalize;
     line-height: 21px;
     font-family: 'Inter', sans-serif;
+    position:relative;
+}
+#menubar .menu .menu-item i{
+    font-size: 14px;
+}
+#menubar .navbar .dropdown-menu-end{ 
+    right:0; 
+    left: auto;  
+}
+#menubar .navbar .nav-item .dropdown-menu{  
+    display:block; 
+    opacity: 0;  
+    visibility: hidden; 
+    transition:.5s; 
+    margin-top:0;
+    padding:0;
+    border-top: 3px solid #9C21FF;
+    box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.3);  
+    min-width: 200px;
+    text-align: left;
+}
+#menubar .menu .menu-item .dropdown-menu li a{
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 400;
+    display: block;
+    padding: 15px 15px 15px 22px;
+    margin-bottom: 0;
+    color: #44424D;
+    transition: all ease-in-out 0.3s;
+}
+#menubar .menu .menu-item .dropdown-menu li a:hover{
+    background-color: #9C21FF;
+    transition: all ease-in-out 0.5s;
+    color:#ffffff;
+}
+#menubar .navbar .dropdown-menu.fade-down{ 
+    top:80%; 
+    transform: rotateX(-75deg); 
+    transform-origin: 0% 0%; 
+}
+#menubar .navbar .dropdown-menu.fade-up{ 
+    top:180%;  
+}
+#menubar .navbar .nav-item:hover .dropdown-menu{ 
+    transition: .5s; 
+    opacity:1; 
+    visibility:visible; 
+    top:100%; 
+    transform: rotateX(0deg); 
 }
 #menubar #other-options ul li{
     float: left;
@@ -2962,32 +3015,32 @@ footer .footer-bottom .footer-bottom-inner .footer-menu li a i{
 .homepage-04 #get-products #get-products-content .get-products-text h2{
     color:#ffffff;
 }
-.homepage-03 #get-products #get-products-content .get-products-text p{
+.homepage-04 #get-products #get-products-content .get-products-text p{
     color: #ffffff;
 
 }
-#get-products #get-products-content .get-products-btn .subscribe-btn{
+.homepage-04 #get-products #get-products-content .get-products-btn .subscribe-btn{
     color:#ffffff;
     background: #022F6C;
     border:1px solid #022F6C;
 }
-#get-products #get-products-content .get-products-btn{
+.homepage-04 #get-products #get-products-content .get-products-btn{
     display: flex;
     width:600px;
     position:relative;
 }
-#get-products #get-products-content .get-products-btn input{
+.homepage-04 #get-products #get-products-content .get-products-btn input{
     width:100%;
     border-radius: 50px;
     padding-left:30px;
     height:60px;
 }
-#get-products #get-products-content .get-products-btn .subscribe-btn{
+.homepage-04 #get-products #get-products-content .get-products-btn .subscribe-btn{
     position: absolute;
     right:0;
     top:0;
 }
-#get-products #get-products-content .get-products-btn .subscribe-btn:hover{
+.homepage-04 #get-products #get-products-content .get-products-btn .subscribe-btn:hover{
     background-color: transparent;
     border:1px solid #022F6C;
     color:#022F6C;

@@ -20,13 +20,13 @@ a.meanmenu-reveal {
 	position: relative;
 	background: #292929;
 	padding: 4px 0;
-	min-height: 60px;
+	min-height: 40px;
 	z-index: 999999;
 }
 .mean-container .mean-bar::before {
-    background: url("../images/header-logo.png") no-repeat center center / cover;
-    height: 50px;
-    width: 150px;
+    background: url("../images/header-logo-01.png") no-repeat center center / cover;
+    height: 20px;
+    width: 100px;
     content: "";
     left: 14px;
     position: absolute;
@@ -63,7 +63,7 @@ a.meanmenu-reveal {
 	float: left;
 	width: 100%;
 	background: #0c1923;
-	margin-top: 70px;
+	margin-top: 40px;
 }
 
 .mean-container .mean-nav ul {
