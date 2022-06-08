@@ -65,8 +65,13 @@
                                 <li class="nav-item menu-item">
                                     <a class="nav-link" href="#">Tamplates</a>
                                 </li>
-                                <li class="nav-item menu-item">
-                                    <a class="nav-link" href="#">By Evolve</a>
+                                <li class="nav-item menu-item dropdown">
+                                    <a class="nav-link menu-link" href="#" data-bs-toggle="dropdown">  Blog <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu fade-up">
+                                        <li><a class="dropdown-item" href="blog-list.html">Blog List</a></li>
+                                        <li><a class="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
+                                        <li><a class="dropdown-item" href="blog-post.html">Blog Details</a></li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item menu-item">
                                     <a class="nav-link menu-link" href="contact.html">Contact</a>
@@ -112,34 +117,173 @@
     </div>
 
     <main>
-        <section id="blog-area">
-            <div class="blog-wrap">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="single-blog">
-                            <div class="single-blog-img">
-                                <img src="images/blog-img-01.jpg" alt="">
-                                <div class="blog-meta-date">
-                                    <span>14</span>
-                                    <span>May</span>
+        <section id="blog-grid-area">
+            <div class="container">
+                <div class="blog-wrap">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="single-blog">
+                                <div class="single-blog-img">
+                                    <img src="images/blog-img-05.jpg" alt="">
+                                    <div class="blog-meta-date">
+                                        <span>14</span>
+                                        <span class="month">May</span>
+                                    </div>
+                                </div>
+                                <div class="blog-text-content">
+                                    <div class="blog-meta">
+                                        <span><i class="fa-solid fa-comment"></i> Comments (5)</span>
+                                    </div>
+                                    <h5><a href="">Serve – Digital Services WordPress Marketplace</a></h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesettin industry.</p>
+                                    <div class="blog-footer">
+                                        <a href="#" class="continue-btn">Continue reading<i class="fas fa-chevron-right"></i></a>
+                                        <div class="blog-by">
+                                            <img src="images/contributor-img-03.png" alt="">
+                                            <span>Alex Smith</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="blog-meta"></div>
-                            <h5></h5>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="single-blog">
+                                <div class="single-blog-img">
+                                    <img src="images/blog-img-06.jpg" alt="">
+                                    <div class="blog-meta-date">
+                                        <span>14</span>
+                                        <span class="month">May</span>
+                                    </div>
+                                </div>
+                                <div class="blog-text-content">
+                                    <div class="blog-meta">
+                                        <span><i class="fa-solid fa-comment"></i> Comments (5)</span>
+                                    </div>
+                                    <h5><a href="">Serve – Digital Services WordPress Marketplace</a></h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesettin industry.</p>
+                                    <div class="blog-footer">
+                                        <a href="#" class="continue-btn">Continue reading<i class="fas fa-chevron-right"></i></a>
+                                        <div class="blog-by">
+                                            <img src="images/contributor-img-03.png" alt="">
+                                            <span>Alex Smith</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="single-blog">
+                                <div class="single-blog-img">
+                                    <img src="images/blog-img-02.jpg" alt="">
+                                    <div class="blog-meta-date">
+                                        <span>14</span>
+                                        <span class="month">May</span>
+                                    </div>
+                                </div>
+                                <div class="blog-text-content">
+                                    <div class="blog-meta">
+                                        <span><i class="fa-solid fa-comment"></i> Comments (5)</span>
+                                    </div>
+                                    <h5><a href="">Serve – Digital Services WordPress Marketplace</a></h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesettin industry.</p>
+                                    <div class="blog-footer">
+                                        <a href="#" class="continue-btn">Continue reading<i class="fas fa-chevron-right"></i></a>
+                                        <div class="blog-by">
+                                            <img src="images/contributor-img-03.png" alt="">
+                                            <span>Alex Smith</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="single-blog">
+                                <div class="single-blog-img">
+                                    <img src="images/blog-img-03.jpg" alt="">
+                                    <div class="blog-meta-date">
+                                        <span>14</span>
+                                        <span class="month">May</span>
+                                    </div>
+                                </div>
+                                <div class="blog-text-content">
+                                    <div class="blog-meta">
+                                        <span><i class="fa-solid fa-comment"></i> Comments (5)</span>
+                                    </div>
+                                    <h5><a href="">Serve – Digital Services WordPress Marketplace</a></h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesettin industry.</p>
+                                    <div class="blog-footer">
+                                        <a href="#" class="continue-btn">Continue reading<i class="fas fa-chevron-right"></i></a>
+                                        <div class="blog-by">
+                                            <img src="images/contributor-img-03.png" alt="">
+                                            <span>Alex Smith</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="single-blog">
+                                <div class="single-blog-img">
+                                    <img src="images/blog-img-08.jpg" alt="">
+                                    <div class="blog-meta-date">
+                                        <span>14</span>
+                                        <span class="month">May</span>
+                                    </div>
+                                </div>
+                                <div class="blog-text-content">
+                                    <div class="blog-meta">
+                                        <span><i class="fa-solid fa-comment"></i> Comments (5)</span>
+                                    </div>
+                                    <h5><a href="">Serve – Digital Services WordPress Marketplace</a></h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesettin industry.</p>
+                                    <div class="blog-footer">
+                                        <a href="#" class="continue-btn">Continue reading<i class="fas fa-chevron-right"></i></a>
+                                        <div class="blog-by">
+                                            <img src="images/contributor-img-03.png" alt="">
+                                            <span>Alex Smith</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="single-blog">
+                                <div class="single-blog-img">
+                                    <img src="images/blog-img-01.jpg" alt="">
+                                    <div class="blog-meta-date">
+                                        <span>14</span>
+                                        <span class="month">May</span>
+                                    </div>
+                                </div>
+                                <div class="blog-text-content">
+                                    <div class="blog-meta">
+                                        <span><i class="fa-solid fa-comment"></i> Comments (5)</span>
+                                    </div>
+                                    <h5><a href="">Serve – Digital Services WordPress Marketplace</a></h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesettin industry.</p>
+                                    <div class="blog-footer">
+                                        <a href="#" class="continue-btn">Continue reading<i class="fas fa-chevron-right"></i></a>
+                                        <div class="blog-by">
+                                            <img src="images/contributor-img-03.png" alt="">
+                                            <span>Alex Smith</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="get-products">
-            <div class="container">
-                <div id="get-products-content">
-                    <div class="get-products-text">
-                        <h2>Get all products for only $59!</h2>
-                        <p>Distinctively negotiate B2B value without multimedia based manufactured products. Efficiently.</p>
-                    </div>
-                    <div class="get-products-btn">
-                        <a href="#" class="btn btn-primary subscribe-btn">Subscribe Now</a>
+            </section>
+            <section id="get-products">
+                <div class="container">
+                    <div id="get-products-content">
+                        <div class="get-products-text">
+                            <h2>Get all products for only $59!</h2>
+                            <p>Distinctively negotiate B2B value without multimedia based manufactured products. Efficiently.</p>
+                        </div>
+                        <div class="get-products-btn">
+                            <a href="#" class="btn btn-primary subscribe-btn">Subscribe Now</a>
+                        </div>
                     </div>
                 </div>
             </div>

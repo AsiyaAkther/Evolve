@@ -110,13 +110,14 @@ $(document).ready(function(){
 
     $('.iso-items').isotope({
         itemSelector: '.iso-item',
+        percentPosition: true,
         masonry: {
             columnWidth: 100,
-            gutter:6,
             fitWidth: true,
+            gutter:6,
             horizontalOrder: true
           }
-      });
+      });   
       $('.products-display-nav ul li').click(function(){
         $('.products-display-nav ul li').removeClass('active');
         $(this).addClass('active');
@@ -126,7 +127,7 @@ $(document).ready(function(){
             filter:selector
         });
         return false;
-      });
+      }); 
 
       // Pop-up video js
 
@@ -151,17 +152,87 @@ $(document).ready(function(){
     //===========slick js for leaderboard section slider-01
 
     $('.leaderboard-slider-one').slick({
-        infinite: false,
-        slidesToShow: 5,
-        slidesToScroll: 4,
+        infinite: true,
         variableWidth: true,
         dots:false,
         arrows:true,
+        speed:300,
+        nextArrow: '<span class="next-arrow"><i class="fa-solid fa-chevron-right"></i></span>',
         responsive: [
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 5,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+              }
+            }
+        ]
+    });
+
+    //===========slick js for leaderboard section slider-02
+
+    $('.leaderboard-slider-two').slick({
+        infinite: true,
+        variableWidth: true,
+        dots:false,
+        arrows:true,
+        nextArrow: '<span class="next-arrow"><i class="fa-solid fa-chevron-right"></i></span>',
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+              }
+            }
+        ]
+    });
+
+    //===========slick js for leaderboard section slider-03
+    
+    $('.leaderboard-slider-three').slick({
+        infinite: true,
+        variableWidth: true,
+        dots:false,
+        arrows:true,
+        nextArrow: '<span class="next-arrow"><i class="fa-solid fa-chevron-right"></i></span>',
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
                 slidesToScroll: 4,
                 infinite: true,
                 dots: true
@@ -181,29 +252,7 @@ $(document).ready(function(){
                 slidesToScroll: 2
               }
             }
-          ]
-    });
-
-    //===========slick js for leaderboard section slider-02
-
-    $('.leaderboard-slider-two').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 4,
-        variableWidth: true,
-        dots:false,
-        arrows:true
-    });
-
-    //===========slick js for leaderboard section slider-03
-    
-    $('.leaderboard-slider-three').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 4,
-        variableWidth: true,
-        dots:false,
-        arrows:true
+        ]
     });
 
     // Various artist js code for homepage-03
@@ -226,7 +275,7 @@ $(document).ready(function(){
       //Mean menu js
       jQuery(document).ready(function () {
         jQuery('nav .main-menu').meanmenu({
-            meanScreenWidth: "991"
+          meanScreenWidth:"991"
         });
     });
 
@@ -247,5 +296,27 @@ $(document).ready(function(){
         centerMode: true,
         focusOnSelect: true
       });
+
+      $('.blog-slider').owlCarousel({
+        loop:true,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        nav:true,
+        navText:[
+            "<i class='fa-solid fa-chevron-left'></i>",
+            "<i class='fa-solid fa-chevron-right'></i>"
+        ],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
    
 });
