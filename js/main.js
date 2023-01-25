@@ -108,7 +108,8 @@ $(document).ready(function(){
 
     // Isotope js code
 
-    $('.iso-items').isotope({
+    $(window).load(function() {
+      $('.iso-items').isotope({
         itemSelector: '.iso-item',
         percentPosition: true,
         masonry: {
@@ -127,7 +128,8 @@ $(document).ready(function(){
             filter:selector
         });
         return false;
-      }); 
+      });
+    }); 
 
       // Pop-up video js
 
@@ -257,7 +259,8 @@ $(document).ready(function(){
 
     // Various artist js code for homepage-03
 
-    $('.various-artist-isotope').isotope({
+    $(window).load(function(){
+      $('.various-artist-isotope').isotope({
         itemSelector: '.various-iso-item',
         layoutMode:'fitRows'
       });
@@ -271,6 +274,7 @@ $(document).ready(function(){
         });
         return false;
       });
+    });
 
       //Mean menu js
       jQuery(document).ready(function () {
@@ -286,7 +290,10 @@ $(document).ready(function(){
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-nav'
+        asNavFor: '.slider-nav',
+        arrows:true,
+        nextArrow: '<span class="next-arrow"><i class="fa-solid fa-chevron-right"></i></span>',
+        prevArrow: '<span class="prev-arrow"><i class="fa-solid fa-chevron-left"></i></span>'
       });
       $('.slider-nav').slick({
         slidesToShow: 3,
@@ -318,5 +325,33 @@ $(document).ready(function(){
             }
         }
     });
+
+    //Audio js
+    var audio = {    
+      init: function() {        
+      var $that = this;        
+          $(function() {            
+              $that.components.media();        
+          });    
+      },
+      components: {        
+          media: function(target) {            
+              var media = $('audio.fc-media', (target !== undefined) ? target : 'body');            
+              if (media.length) {                
+                  media.mediaelementplayer({                    
+                      audioHeight: 40,
+                      features : ['playpause', 'current', 'duration', 'progress', 'volume', 'tracks', 'fullscreen'],
+                      alwaysShowControls      : true,
+                      timeAndDurationSeparator: '<span></span>',
+                      iPadUseNativeControls: true,
+                      iPhoneUseNativeControls: true,
+                      AndroidUseNativeControls: true                
+                  });            
+              }        
+          },
+              
+      },
+  };
+  audio.init();
    
 });
